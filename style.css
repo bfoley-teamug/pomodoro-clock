@@ -1,0 +1,32 @@
+body {
+   background: url(https://78.media.tumblr.com/83b219b4950fafd72b05f2dc16c557fd/tumblr_p3wa87ESGq1vd2c8xo1_1280.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "Arial";
+  color: 	#000080;
+}
+
+h1, h5 {
+  margin: 15px 0px;
+}
+
+h2, h3 {
+  display: inline;
+  
+}
+
+#start, #reset {
+  margin-top: 10px; 
+}
+
+#timeDigits, #timeDigitsTwo {
+  color: red;
+}
+ 
+
+.row {
+  margin-bottom: 12px;
+}
+
