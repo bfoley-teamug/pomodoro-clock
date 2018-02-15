@@ -1,4 +1,5 @@
 //Remaining To Do's:
+//move reset button
 //add a pause button
 
 
@@ -26,10 +27,10 @@ $(document).ready(function() {
       
       //turn into mins
       if (count % 60 >= 10) {
-         $('#numSess').html(Math.floor(count/60)+":"+count % 60);        
+ $('#numSess').html(Math.floor(count/60)+":"+count % 60); 
        } else {
        //less than 10 secs
-         $('#numSess').html(Math.floor(count/60)+":"+"0"+count % 60);
+ $('#numSess').html(Math.floor(count/60)+":"+"0"+count % 60);
        }
       
         function breakTimer() {
@@ -47,20 +48,14 @@ $(document).ready(function() {
             $('#timeDigitsTwo').html('Break Over!'); 
             $('#numBreak').hide(); 
             $('#reset').fadeIn(1200); 
+            
+            $('#reset').click(function() {
+              location.reload(true);
+            });
           }
-          //$('#numBreak').html(countBreak); 
- 
         }
-      }
- 
-  
- 
+       } 
      });
-   $('#reset').click(function() {
-    location.reload(true);
-    //window.location.reload(); 
-  });
- 
   
   $("#subtractSess").click(function() { 
     if(count >= 0) {
@@ -81,7 +76,7 @@ $(document).ready(function() {
       $("#numBreak").html(countBreak); 
     }
   });
-   
+  
   $("#addBreak").click(function() { 
     if(countBreak >= 0) {
       countBreak +=1; 
