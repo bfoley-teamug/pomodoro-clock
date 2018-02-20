@@ -1,7 +1,3 @@
-//Remaining To Do's:
-//move reset button
-//add a pause button
-
 
 $(document).ready(function() {
   var count = parseInt($("#numSess").html());
